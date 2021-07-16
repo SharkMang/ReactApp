@@ -13,7 +13,7 @@ export default class Home {
 
     this.container.classList.add('container');
     this.header.classList.add('header');
-    this.container.classList.add('section');
+    this.sectionTodoList.classList.add('section');
     this.footer.classList.add('footer');
     
     this.todoList = [

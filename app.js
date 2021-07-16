@@ -24,7 +24,12 @@ class App {
       }
     });
 
-    this.render(this.loginPage);
+    if (localStorage.getItem('isAuthenticated') === 'true') {
+      this.render(this.homePage);
+    } else {
+      this.render(this.loginPage);
+    }
+    
   }
 
   render(page) {
